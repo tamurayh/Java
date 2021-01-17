@@ -9,8 +9,9 @@
 <body>
 	<h1> ログインをしてください。</h1>
         <form method="GET" action="./Sample">
-            <input type="text" name="uername"> <input type="submit"
-                name="nextButton" value="決定して次へ">
+          <p>ユーザー名: <input type="text" name="uername"></p> 
+          <p>パスワード: <input type="text" name="uerpass"></p>
+          <input type="submit" name="nextButton" value="ログイン">
         </form>
 	
 

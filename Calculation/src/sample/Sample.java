@@ -31,11 +31,12 @@ public class Sample extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String stename = request.getParameter("uername");
+		String stepass = request.getParameter("uerpass");
 		
 		try{
 			if (stename != null) {
 				
-				MeiboBean med = new MeiboBean(stename);
+				MeiboBean med = new MeiboBean(stename,stepass);
 				request.setAttribute("med", med);
 				forward = "./results.jsp";
 
