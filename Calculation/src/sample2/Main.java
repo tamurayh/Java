@@ -1,14 +1,17 @@
 package sample2;
 
 
-import java.io.*;
 import java.sql.*;
  
 public class Main {
     public static void main(String[] args) throws Exception {
       Connection con = null;
+     	final String jdbcId ="root";
+        final String jdbcPass ="ytyt0627";
+        final String jdbcUrl  ="jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
+
        try {
-         con = DriverManager.getConnection("jdbc:mysql://localhost/sample?characterEncoding=UTF-8&serverTimezone=JST", "root", "ytyt0627");
+         con = DriverManager.getConnection(jdbcUrl,jdbcId,jdbcPass);
          Statement st = con.createStatement();
          String sql = "select * from user;";
          ResultSet result = st.executeQuery(sql);

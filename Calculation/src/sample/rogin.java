@@ -10,20 +10,20 @@ import sample.MeiboBean;
 
 public class rogin {
 	
-	final String jdbcId = "root";
-    final String jdbcPass = "ytyt0627";
-    final String jdbcUrl = "jdbc:mysql://localhost/sample?characterEncoding=UTF-8&serverTimezone=JST";
-
     // ログインアカウントを探す
     public  MeiboBean findAccount(MeiboBean ab) {
-    	
-    	 MeiboBean returnAb = new MeiboBean();
-    	 
-    	 try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
-    		 String sql = "SELECT id, name, pass  FROM account WHERE id = ? AND pass = ?";
-             PreparedStatement ps= con.prepareStatement(sql);
+    	final String jdbcId ="root";
+        final String jdbcPass ="ytyt0627";
+        final String jdbcUrl = "jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
 
-             ps.setInt(1, ab.getid());
+    	// 戻り値の用意
+    	 MeiboBean returnAb = new MeiboBean();
+    	// データベースへ接続
+    	 try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
+    		 String sql = "SELECT id, name, pass FROM user WHERE name = ? AND pass = ?;";
+             PreparedStatement ps= con.prepareStatement(sql);
+             
+             ps.setString(1, ab.getName());
              ps.setString(2, ab.getpass());
 
              ResultSet rs = ps.executeQuery();

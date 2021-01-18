@@ -8,9 +8,9 @@
 </head>
 <body>
 	<h1> ログインをしてください。</h1>
-        <form method="GET" action="./Sample">
-          <p>ユーザー名: <input type="text" name="uername"></p> 
-          <p>パスワード: <input type="text" name="uerpass"></p>
+        <form method="post" action="./Sample">
+          ユーザー名: <input type="text" name="uername"required><br>
+          パスワード: <input type="text" name="uerpass"required><br>
           <input type="submit" name="nextButton" value="ログイン">
         </form>
 	

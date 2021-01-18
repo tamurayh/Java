@@ -8,19 +8,6 @@ public class MeiboBean implements Serializable{
 	private int id;
 	private String name;
 	private String pass;
-	
-	public MeiboBean() {
-		
-	}
-	
-	public MeiboBean(String name, String pass, int id) {
-
-		this.id = id;
-		this.name = name;
-		this.pass = pass;	
-		
-	}
-
 
 	public void setname(String name ) {
 
@@ -51,7 +38,7 @@ public class MeiboBean implements Serializable{
     	  
     	  return id;
    }
-    
+
     
 }
 

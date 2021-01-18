@@ -18,6 +18,12 @@
     <servlet-name>results</servlet-name>
     <jsp-file>/results.jsp</jsp-file>
   </servlet>
+      <servlet>
+    <description></description>
+    <display-name>error</display-name>
+    <servlet-name>error</servlet-name>
+    <jsp-file>/error.jsp</jsp-file>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
@@ -30,6 +36,16 @@
     <servlet-name>results</servlet-name>
     <url-pattern>/results</url-pattern>
   </servlet-mapping>
+        <servlet-mapping>
+    <servlet-name>error</servlet-name>
+    <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+  <resource-ref>
+<description>Database Connections</description>
+<res-ref-name>jdbc/rogin</res-ref-name>
+<res-type>javax.sql.DataSource</res-type>
+<res-auth>Container</res-auth>
+</resource-ref>
    <display-name>Calculation</display-name>
    
 </web-app>
