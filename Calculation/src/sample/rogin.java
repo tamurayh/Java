@@ -27,8 +27,7 @@ public class rogin {
              ps.setString(2, ab.getpass());
 
              ResultSet rs = ps.executeQuery();
-
-
+            
              if (rs.next()) {
                  // 見つかったアカウント情報を戻り値にセット
                  returnAb.setid(rs.getInt("id"));

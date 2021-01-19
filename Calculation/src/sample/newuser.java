@@ -1,9 +1,6 @@
 package sample;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 import sample.MeiboBean;
 
@@ -16,11 +13,18 @@ public class newuser {
     public  newuser(MeiboBean ab) {
     
     try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
+    	Statement st = con.createStatement();
+    	String sql1 = "SELECT COUNT(*) FROM user";
+    	ResultSet ps1= st.executeQuery(sql1);
+    	
+    	ps1.next(); 
+    	int ct = ps1.getInt("COUNT");
+       	ct ++;
 
-        String sql = "INSERT INTO account (id, name, pass) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO user (id, name, pass) VALUES (?, ?, ?)";
         PreparedStatement ps= con.prepareStatement(sql);
         
-        ps.setInt(1, ab.getid());
+        ps.setInt(1, ct);
         ps.setString(2, ab.getName());
         ps.setString(3, ab.getpass());
         

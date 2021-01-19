@@ -36,7 +36,7 @@ public class MeiboBean implements Serializable{
 	
     public int getid() {
     	  
-    	  return id;
+      return id;
    }
 
     
