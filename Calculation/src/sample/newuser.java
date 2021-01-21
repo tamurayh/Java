@@ -1,32 +1,30 @@
 package sample;
 
 import java.sql.*;
+import org.mindrot.jbcrypt.BCrypt;
 
 import sample.MeiboBean;
 
 public class newuser {
-	
+		
 	final String jdbcId ="root";
     final String jdbcPass ="ytyt0627";
     final String jdbcUrl = "jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
     
+    String Password = null;
+    
     public  newuser(MeiboBean ab) {
+
     
     try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
-    	Statement st = con.createStatement();
-    	String sql1 = "SELECT COUNT(*) FROM user";
-    	ResultSet ps1= st.executeQuery(sql1);
-    	
-    	ps1.next(); 
-    	int ct = ps1.getInt("COUNT");
-       	ct ++;
 
-        String sql = "INSERT INTO user (id, name, pass) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO user (name, pass) VALUES (?, ?)";
         PreparedStatement ps= con.prepareStatement(sql);
         
-        ps.setInt(1, ct);
-        ps.setString(2, ab.getName());
-        ps.setString(3, ab.getpass());
+        String hashed = BCrypt.hashpw(ab.getpass(),BCrypt.gensalt());
+        
+        ps.setString(1, ab.getName());
+        ps.setString(2, hashed);
         
         int r = ps.executeUpdate();
 
