@@ -8,7 +8,6 @@ public class MeiboBean implements Serializable{
 	private int id;
 	private String name;
 	private String pass;
-	private String  Password;
 
 	public void setname(String name ) {
 

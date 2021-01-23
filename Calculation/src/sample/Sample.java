@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import sample.MeiboBean;
 import sample.rogin;
-
+import org.mindrot.jbcrypt.BCrypt;
 
 /**
  * Servlet implementation class Sample
@@ -44,19 +44,24 @@ public class Sample extends HttpServlet {
 				ab.setpass(stepass);
 				
 				rogin ad = new rogin();
+
 				MeiboBean returnAb = ad.findAccount(ab);
+				
+				String hashed = returnAb.getpass();
+				
 				if(returnAb != null) {
+					
+					if(BCrypt.checkpw(stepass, hashed)) {
 		            // セッションにアカウント情報＆ロールを登録
 		            HttpSession session = request.getSession();
 		            session.setAttribute("account", returnAb);
 
 		            RequestDispatcher rd = request.getRequestDispatcher("./results.jsp");
 		            rd.forward(request, response);
-
-		        } else {
-		            RequestDispatcher rd = request.getRequestDispatcher("./error.jsp");
-		            rd.forward(request, response);
-
+		            
+					}else{
+			            RequestDispatcher rd = request.getRequestDispatcher("./error.jsp");
+			            rd.forward(request, response);}
 		        }
 			}
-	}
+		}

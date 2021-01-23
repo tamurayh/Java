@@ -24,6 +24,12 @@
     <servlet-name>error</servlet-name>
     <jsp-file>/error.jsp</jsp-file>
   </servlet>
+      <servlet>
+    <description></description>
+    <display-name>register</display-name>
+    <servlet-name>register</servlet-name>
+    <jsp-file>/register.jsp</jsp-file>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
@@ -39,6 +45,10 @@
         <servlet-mapping>
     <servlet-name>error</servlet-name>
     <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+       <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
   </servlet-mapping>
   <resource-ref>
 <description>Database Connections</description>

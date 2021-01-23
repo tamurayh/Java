@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import sample.MeiboBean;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class rogin {
 	
@@ -20,14 +21,13 @@ public class rogin {
     	 MeiboBean returnAb = new MeiboBean();
     	// データベースへ接続
     	 try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
-    		 String sql = "SELECT id, name, pass FROM user WHERE name = ? AND pass = ?;";
+    		 String sql = "SELECT id, name, pass FROM user WHERE name = ?";
              PreparedStatement ps= con.prepareStatement(sql);
              
              ps.setString(1, ab.getName());
-             ps.setString(2, ab.getpass());
 
              ResultSet rs = ps.executeQuery();
-            
+             
              if (rs.next()) {
                  // 見つかったアカウント情報を戻り値にセット
                  returnAb.setid(rs.getInt("id"));
