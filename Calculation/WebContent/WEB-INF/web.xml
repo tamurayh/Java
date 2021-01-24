@@ -30,6 +30,12 @@
     <servlet-name>register</servlet-name>
     <jsp-file>/register.jsp</jsp-file>
   </servlet>
+    <servlet>
+    <description></description>
+    <display-name>registerSuccess</display-name>
+    <servlet-name>registerSuccess</servlet-name>
+    <jsp-file>/registerSuccess.jsp</jsp-file>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
@@ -49,6 +55,10 @@
        <servlet-mapping>
     <servlet-name>register</servlet-name>
     <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>registerSuccess</servlet-name>
+    <url-pattern>/registerSuccess</url-pattern>
   </servlet-mapping>
   <resource-ref>
 <description>Database Connections</description>

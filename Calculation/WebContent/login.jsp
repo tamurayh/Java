@@ -8,12 +8,13 @@
 </head>
 <body>
 	<h1> ログインをしてください。</h1>
+	
         <form method="post" action="./Sample">
           ユーザー名: <input type="text" name="uername"required><br>
           パスワード: <input type="text" name="uerpass"required><br>
           <input type="submit" name="nextButton" value="ログイン">
         </form>
+          <button  onclick="location.href='./register.jsp'">新規登録の方はこちら </button>
 	
-
 </body>
 </html>

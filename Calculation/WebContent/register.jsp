@@ -10,9 +10,10 @@
 <form action="./Register" method="post">
 <p>すべて入力してください</p>
 
-　　　名前：<input type="text" name="name" required><br>
+ユーザー名：<input type="text" name="name" required><br>
 パスワード：<input type="password" name="pass" required><br>
 <input type="submit" value="登録"><br>
+<button  onclick="location.href='./login.jsp'">ログインをする </button>
 </form>
 </body>
 </html>
