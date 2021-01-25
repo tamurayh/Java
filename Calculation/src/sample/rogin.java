@@ -24,7 +24,7 @@ public class rogin {
     		 String sql = "SELECT id, name, pass FROM user WHERE name = ?";
              PreparedStatement ps= con.prepareStatement(sql);
              
-             ps.setString(1, ab.getName());
+             ps.setString(1, ab.getname());
 
              ResultSet rs = ps.executeQuery();
              

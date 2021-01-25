@@ -14,7 +14,7 @@ public class MeiboBean implements Serializable{
     	this.name = name;	
     }
 	
-    public String getName() {
+    public String getname() {
     	  
     	  return name;
    }

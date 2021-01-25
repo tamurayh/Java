@@ -23,7 +23,7 @@ public class newuser {
               
         String hashed = BCrypt.hashpw(ab.getpass(),BCrypt.gensalt());
         
-        ps.setString(1, ab.getName());
+        ps.setString(1, ab.getname());
         ps.setString(2, hashed);
         
         int r = ps.executeUpdate();
