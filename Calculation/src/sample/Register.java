@@ -54,7 +54,7 @@ public class Register extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("account", ab);
 		
-        RequestDispatcher rd = request.getRequestDispatcher("registerSuccess.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("./jsp/registerSuccess.jsp");
         rd.forward(request, response);
 	}
 

@@ -56,11 +56,11 @@ public class Sample extends HttpServlet {
 		            HttpSession session = request.getSession();
 		            session.setAttribute("account", returnAb);
 
-		            RequestDispatcher rd = request.getRequestDispatcher("./results.jsp");
+		            RequestDispatcher rd = request.getRequestDispatcher("./jsp/results.jsp");
 		            rd.forward(request, response);
 		            
 					}else{
-			            RequestDispatcher rd = request.getRequestDispatcher("./error.jsp");
+			            RequestDispatcher rd = request.getRequestDispatcher("./jsp/error.jsp");
 			            rd.forward(request, response);}
 		        }
 			}

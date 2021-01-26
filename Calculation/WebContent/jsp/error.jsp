@@ -10,7 +10,7 @@
 
 <h1>エラーです</h1>
 <p>ユーザー名・パスワードを正しく入力してください</p>
-<button  onclick="location.href='./login.jsp'">戻る</button>
+<a href="login.jsp"><button type="button" >戻る</button></a>
 
 </body>
 </html>
