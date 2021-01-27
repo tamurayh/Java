@@ -1,4 +1,4 @@
-package sample;
+package userRegistration;
 
 import java.io.Serializable;
 

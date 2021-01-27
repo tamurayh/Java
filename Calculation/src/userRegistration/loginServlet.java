@@ -1,4 +1,4 @@
-package sample;
+package userRegistration;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -9,20 +9,21 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpSession;
 
-import sample.MeiboBean;
-import sample.rogin;
 import org.mindrot.jbcrypt.BCrypt;
+
+import userRegistration.MeiboBean;
+import userRegistration.login;
 
 /**
  * Servlet implementation class Sample
  */
-@WebServlet("/Sample")
-public class Sample extends HttpServlet {
+@WebServlet("/loginServlet")
+public class loginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Sample() {
+    public loginServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -43,7 +44,7 @@ public class Sample extends HttpServlet {
 				ab.setname(stename);
 				ab.setpass(stepass);
 				
-				rogin ad = new rogin();
+				login ad = new login();
 
 				MeiboBean returnAb = ad.findAccount(ab);
 				
@@ -56,11 +57,11 @@ public class Sample extends HttpServlet {
 		            HttpSession session = request.getSession();
 		            session.setAttribute("account", returnAb);
 
-		            RequestDispatcher rd = request.getRequestDispatcher("./jsp/results.jsp");
+		            RequestDispatcher rd = request.getRequestDispatcher("./results.jsp");
 		            rd.forward(request, response);
 		            
 					}else{
-			            RequestDispatcher rd = request.getRequestDispatcher("./jsp/error.jsp");
+			            RequestDispatcher rd = request.getRequestDispatcher("./error.jsp");
 			            rd.forward(request, response);}
 		        }
 			}

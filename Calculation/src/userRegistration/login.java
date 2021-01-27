@@ -1,4 +1,4 @@
-package sample;
+package userRegistration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,10 +6,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import sample.MeiboBean;
 import org.mindrot.jbcrypt.BCrypt;
 
-public class rogin {
+import userRegistration.MeiboBean;
+
+public class login {
 	
     // ログインアカウントを探す
     public  MeiboBean findAccount(MeiboBean ab) {

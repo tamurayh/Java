@@ -1,28 +1,25 @@
-package sample;
+package Calculation;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import sample.newuser;
-import sample.MeiboBean;
+import arithmetic.Randamu_sakusei;
+
 /**
- * Servlet implementation class Register
+ * Servlet implementation class Addition_Servlet
  */
-@WebServlet("/Register")
-public class Register extends HttpServlet {
+@WebServlet("/Addition_Servlet")
+public class Addition_Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Register() {
+    public Addition_Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,23 +36,8 @@ public class Register extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-        String name = request.getParameter("name");
-        String pass = request.getParameter("pass");
-        
-        // register.jspから受け取った値をビーンズにセット
-        MeiboBean ab = new MeiboBean();
-        ab.setname(name);
-        ab.setpass(pass);
-        
-        // アカウントをDBに登録
-        newuser ard = new newuser(ab);
-        
-        HttpSession session = request.getSession();
-        session.setAttribute("account", ab);
-		
-        RequestDispatcher rd = request.getRequestDispatcher("./jsp/registerSuccess.jsp");
-        rd.forward(request, response);
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

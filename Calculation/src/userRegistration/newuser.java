@@ -1,9 +1,9 @@
-package sample;
+package userRegistration;
 
 import java.sql.*;
 import org.mindrot.jbcrypt.BCrypt;
 
-import sample.MeiboBean;
+import userRegistration.MeiboBean;
 
 public class newuser {
 		

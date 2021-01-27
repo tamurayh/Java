@@ -9,7 +9,7 @@
 <body>
 	<h1> ログインをしてください。</h1>
 	
-        <form method="post" action="./Sample">
+        <form method="post" action="./loginServlet">
           ユーザー名: <input type="text" name="uername"required><br>
           パスワード: <input type="password" name="uerpass"required><br>
           <input type="submit" name="nextButton" value="ログイン">
