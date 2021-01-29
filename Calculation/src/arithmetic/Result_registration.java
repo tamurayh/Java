@@ -14,9 +14,9 @@ public class Result_registration {
     final String jdbcPass ="ytyt0627";
     final String jdbcUrl = "jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
     
-    public Result_registration(MeiboBean ab) {
+    public Result_registration(Randamu_sakusei RS) {
     	
-    	Randamu_sakusei	RS = new Randamu_sakusei();
+    	MeiboBean MB = new MeiboBean();
     	
     	try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
     		
@@ -27,7 +27,7 @@ public class Result_registration {
             ps.setInt(1, RS.getvalue1());
             ps.setInt(2, RS.getvalue2());
             ps.setInt(3, RS.getAnswer());
-            ps.setInt(4, ab.getid());
+            ps.setInt(4, MB.getid());
             
             int r = ps.executeUpdate();
             

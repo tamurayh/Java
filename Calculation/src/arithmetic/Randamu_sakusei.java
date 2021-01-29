@@ -14,6 +14,7 @@ public class Randamu_sakusei {
     private int Divisionresult = value1 / value2;
     
     private int Answer = 0;
+    private int Acceptance = 0;
     
     public int getvalue1() {
         return value1;
@@ -53,6 +54,14 @@ public class Randamu_sakusei {
 
     public void setAnswer(int Answer) {
         this.Answer = Answer;
+    }
+    
+    public int getAcceptance() {
+        return Acceptance;
+    }
+
+    public void setAcceptance(int Acceptance) {
+        this.Acceptance = Acceptance;
     }
     
     
