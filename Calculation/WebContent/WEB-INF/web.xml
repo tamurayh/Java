@@ -14,6 +14,12 @@
   </servlet>
     <servlet>
     <description></description>
+    <display-name>addition</display-name>
+    <servlet-name>addition</servlet-name>
+    <jsp-file>/jsp/addition.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
     <display-name>results</display-name>
     <servlet-name>results</servlet-name>
     <jsp-file>/jsp/results.jsp</jsp-file>
@@ -69,6 +75,10 @@
         <servlet-mapping>
     <servlet-name>user</servlet-name>
     <url-pattern>/user.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>addition</servlet-name>
+    <url-pattern>/addition.jsp</url-pattern>
   </servlet-mapping>
   <resource-ref>
 <description>Database Connections</description>

@@ -52,7 +52,14 @@ public class Addition_Servlet extends HttpServlet {
 				
 				RS.setAcceptance(1);
 				
-				forward = "/addResult.jsp";
+				forward = "/addition.jsp";
+				
+			} else {
+				
+				RS.setAcceptance(0);
+				
+				forward = "/addition_error.jsp";
+				
 			}
 		}catch(Exception e){
             forward = "/addAnswer.jsp";
