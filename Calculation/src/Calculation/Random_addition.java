@@ -1,4 +1,4 @@
-package userRegistration;
+package Calculation;
 
 import java.io.IOException;
 
@@ -10,20 +10,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import userRegistration.MeiboBean;
-import userRegistration.newuser;
+import arithmetic.Randamu_sakusei;
+import arithmetic.Result_registration;
+
 /**
- * Servlet implementation class Register
+ * Servlet implementation class Random_addition
  */
-@WebServlet("/Signup_Servlet")
-public class Signup_Servlet extends HttpServlet {
+@WebServlet("/Random_addition")
+public class Random_addition extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	String forward = null;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Signup_Servlet() {
+    public Random_addition() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,30 +34,36 @@ public class Signup_Servlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		try{	
+		Randamu_sakusei RS = new Randamu_sakusei();	
+		
+		int value1 = RS.getvalue1();
+		int value2 = RS.getvalue2();
+		int Additionresult = value1 + value2;
+		
+		RS.setvalue1(value1);
+		RS.setvalue2(value2);
+		RS.setAdditionresult(Additionresult);
+		
+		HttpSession session = request.getSession();
+		
+        session.setAttribute("Randomadd", RS);
+        forward = "/addition.jsp";
+        
+	}catch(Exception e){
+		System.out.println("エラーです");
+	}finally{
+	RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
+    dispatcher.forward(request, response);
+	}
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-        String name = request.getParameter("name");
-        String pass = request.getParameter("pass");
-        
-        // register.jspから受け取った値をビーンズにセット
-        MeiboBean ab = new MeiboBean();
-        ab.setname(name);
-        ab.setpass(pass);
-        
-        // アカウントをDBに登録
-        newuser ard = new newuser(ab);
-        
-        HttpSession session = request.getSession();
-        session.setAttribute("account", ab);
-		
-        RequestDispatcher rd = request.getRequestDispatcher("./addition.jsp");
-        rd.forward(request, response);
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

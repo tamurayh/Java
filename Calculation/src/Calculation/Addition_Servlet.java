@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import arithmetic.Randamu_sakusei;
 import arithmetic.Result_registration;
+import Calculation.Random_addition;
 
 /**
  * Servlet implementation class Addition_Servlet
@@ -33,39 +34,36 @@ public class Addition_Servlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		HttpSession session = request.getSession();
-		
-		Randamu_sakusei RS = new Randamu_sakusei();
-		
+
 		try{
 			
-			String strAnswer = request.getParameter("answer");
-			int Answer = Integer.parseInt(strAnswer);
-			
+			Randamu_sakusei RS = new Randamu_sakusei();	
+			//正解の答えを呼び出す7
 			int Additionresult = RS.getAdditionresult();
-		
+			System.out.println(Additionresult);
+			//ユーザの答えを受け取る
+			String strAnswer = request.getParameter("answer");
+			//ユーザの答えを値に変換
+			int Answer = Integer.valueOf(strAnswer).intValue();;
+			//ユーザの答えを格納
 			RS.setAnswer(Answer);
-			
-			if ( Answer == Additionresult) {
+			// 正誤チェック
+			if ( Answer == Additionresult ) {
 				
 				RS.setAcceptance(1);
 				
-				forward = "/addition.jsp";
+				forward = "/addition_result.jsp";
 				
 			} else {
 				
 				RS.setAcceptance(0);
 				
-				forward = "/addition_error.jsp";
+				forward = "/error.jsp";
 				
 			}
 		}catch(Exception e){
-            forward = "/addAnswer.jsp";
+            forward = "/addition_result.jsp";
 		}finally{
-			
-			Result_registration ard = new Result_registration(RS);
 			
             RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
             dispatcher.forward(request, response);

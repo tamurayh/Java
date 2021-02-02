@@ -8,10 +8,10 @@ public class Randamu_sakusei {
     private int value1 = rnd.nextInt(99)+1;
     private int value2 = rnd.nextInt(99)+1;
     
-    private int Additionresult = value1 + value2;
-    private int Subtractionresult = value1 - value2;
-    private int Multiplicationresult = value1 * value2;
-    private int Divisionresult = value1 / value2;
+    private int Additionresult = 0;
+    private int Subtractionresult = 0;
+    private int Multiplicationresult = 0;
+    private int Divisionresult = 0;
     
     private int Answer = 0;
     private int Acceptance = 0;
@@ -36,16 +36,32 @@ public class Randamu_sakusei {
         return Additionresult;
     }
     
+    public void setAdditionresult(int Additionresult) {
+        this.Additionresult = Additionresult;
+    }
+    
     public int getSubtractionresult() {
         return Subtractionresult;
+    }
+    
+    public void setSubtractionresult(int Subtractionresult) {
+        this.Subtractionresult = Subtractionresult;
     }
     
     public int getMultiplicationresult() {
         return Multiplicationresult;
     }
     
+    public void setMultiplicationresult(int Multiplicationresult) {
+        this.Multiplicationresult = Multiplicationresult;
+    }
+    
     public int getDivisionresult() {
         return Divisionresult;
+    }
+    
+    public void setDivisionresult(int Divisionresult) {
+        this.Divisionresult = Divisionresult;
     }
     
     public int getAnswer() {

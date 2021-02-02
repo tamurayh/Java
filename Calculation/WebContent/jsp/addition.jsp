@@ -1,21 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>問題</title>
+<title>問題ページ</title>
 </head>
-<jsp:useBean id="Randamu_sakusei" class="arithmetic.Randamu_sakusei" scope="page" />
 <body>
 
         <font size="5">練習問題足し算</font>
         
          <p>計算問題</p>
         <br>
-        <%=Randamu_sakusei.getvalue1()%>
+        <c:out value="${Randomadd.value1}"></c:out>
         +
-        <%=Randamu_sakusei.getvalue2()%>
+       <c:out value="${Randomadd.value2}"></c:out>
         =
         <form method="GET" action="./Addition_Servlet">
             <input type="text" name="answer"> <input type="submit"

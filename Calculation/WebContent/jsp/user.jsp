@@ -9,6 +9,9 @@
 </head>
 <body>
 <p>　　　名前：<c:out value="${account.name }"></c:out></p>
-
+<a href="register.jsp"><button type="button" >新規登録の方はこちら</button></a>
+	<form method="get" action="./Random_addition">
+	        <input type="submit" name="nextButton" value="足し算">
+        </form>
 </body>
 </html>
