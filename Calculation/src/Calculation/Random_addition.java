@@ -35,17 +35,17 @@ public class Random_addition extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		try{	
+		HttpSession session = request.getSession();	
 		Randamu_sakusei RS = new Randamu_sakusei();	
 		
 		int value1 = RS.getvalue1();
 		int value2 = RS.getvalue2();
 		int Additionresult = value1 + value2;
+		System.out.println(Additionresult);
 		
 		RS.setvalue1(value1);
 		RS.setvalue2(value2);
 		RS.setAdditionresult(Additionresult);
-		
-		HttpSession session = request.getSession();
 		
         session.setAttribute("Randomadd", RS);
         forward = "/addition.jsp";

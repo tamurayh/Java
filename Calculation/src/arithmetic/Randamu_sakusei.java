@@ -8,10 +8,10 @@ public class Randamu_sakusei {
     private int value1 = rnd.nextInt(99)+1;
     private int value2 = rnd.nextInt(99)+1;
     
-    private int Additionresult = 0;
-    private int Subtractionresult = 0;
-    private int Multiplicationresult = 0;
-    private int Divisionresult = 0;
+    private int Additionresult;
+    private int Subtractionresult;
+    private int Multiplicationresult;
+    private int Divisionresult;
     
     private int Answer = 0;
     private int Acceptance = 0;
@@ -79,7 +79,6 @@ public class Randamu_sakusei {
     public void setAcceptance(int Acceptance) {
         this.Acceptance = Acceptance;
     }
-    
     
 
 }

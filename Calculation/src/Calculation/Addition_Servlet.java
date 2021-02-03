@@ -34,13 +34,13 @@ public class Addition_Servlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
+		
 		try{
 			
 			Randamu_sakusei RS = new Randamu_sakusei();	
 			//正解の答えを呼び出す7
 			int Additionresult = RS.getAdditionresult();
-			System.out.println(Additionresult);
 			//ユーザの答えを受け取る
 			String strAnswer = request.getParameter("answer");
 			//ユーザの答えを値に変換
