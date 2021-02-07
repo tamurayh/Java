@@ -17,9 +17,9 @@
         +
        <c:out value="${Randomadd.value2}"></c:out>
         =
-        <form method="GET" action="./Addition_Servlet">
-            <input type="text" name="answer"> <input type="submit"
-                name="nextButton" value="決定して次へ">
+        <form method="Post" action="./Random_addition">
+            <input type="text" name="answer"> 
+             <input type="submit" name="nextButton" value="決定して次へ">
         </form> 
     </body></html>
 

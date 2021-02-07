@@ -34,8 +34,7 @@ public class Addition_Servlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		
+
 		try{
 			
 			Randamu_sakusei RS = new Randamu_sakusei();	
