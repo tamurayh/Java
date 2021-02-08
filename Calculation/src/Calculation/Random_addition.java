@@ -39,15 +39,15 @@ public class Random_addition extends HttpServlet {
 		
 		int value1 = RS.getvalue1();
 		int value2 = RS.getvalue2();
-		int Additionresult = value1 + value2;
-		System.out.println(Additionresult);
 		
 		RS.setvalue3(value1);
 		RS.setvalue4(value2);
-		RS.setAdditionresult(Additionresult);
 		
         session.setAttribute("Randomadd", RS);
         forward = "/addition.jsp";
+        
+        addition add = new addition();
+        add.additionPrint(RS);
         
         RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
         dispatcher.forward(request, response);
@@ -61,19 +61,22 @@ public class Random_addition extends HttpServlet {
 		// TODO Auto-generated method stub
 			Randamu_sakusei RS = new Randamu_sakusei();
 			//正解の答えを呼び出す7
-			int Additionresult = RS.getAdditionresult();
 			//ユーザの答えを受け取る
-			System.out.println(Additionresult);
 			String strAnswer = request.getParameter("answer");
+			String value1 = request.getParameter("value1");
+			String value2 = request.getParameter("value2");
 			//ユーザの答えを値に変換
-			int Answer = Integer.valueOf(strAnswer).intValue();;
+			int Answer = Integer.valueOf(strAnswer).intValue();
+			int addvalue1 = Integer.valueOf(value1).intValue();
+			int addvalue2 = Integer.valueOf(value2).intValue();
 			//ユーザの答えを格納
+			int Additionresult = addvalue1 + addvalue2;
 			RS.setAnswer(Answer);
 			// 正誤チェック
 			if ( Answer == Additionresult ) {
 				
 				RS.setAcceptance(1);
-				
+			    
 				forward = "/addition_result.jsp";
 				
 			} else {

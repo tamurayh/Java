@@ -18,6 +18,8 @@
        <c:out value="${Randomadd.value2}"></c:out>
         =
         <form method="Post" action="./Random_addition">
+        <input type="hidden" name="value1" value= "${Randomadd.value1}">
+        <input type="hidden" name="value2" value= "${Randomadd.value2}">
             <input type="text" name="answer"> 
              <input type="submit" name="nextButton" value="決定して次へ">
         </form> 
