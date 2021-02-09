@@ -55,7 +55,7 @@ public class Signup_Servlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("account", ab);
 		
-        RequestDispatcher rd = request.getRequestDispatcher("./addition.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("./registerSuccess.jsp");
         rd.forward(request, response);
 	}
 

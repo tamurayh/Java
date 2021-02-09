@@ -9,6 +9,7 @@ public class Randamu_sakusei {
     private int value2 = rnd.nextInt(99)+1;
     private int value3;
     private int value4;
+	private int id;
     
     private int Additionresult;
     private int Subtractionresult;
@@ -97,6 +98,15 @@ public class Randamu_sakusei {
     public void setAcceptance(int Acceptance) {
         this.Acceptance = Acceptance;
     }
+	public void setid(int id) {
+
+    	this.id = id;	
+    }
+	
+    public int getid() {
+    	  
+      return id;
+   }
     
 
 }

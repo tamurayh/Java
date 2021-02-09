@@ -9,11 +9,13 @@
 <title>ユーザーページ</title>
 </head>
 <body>
-<p>　　　名前：<c:out value="${account.name }"></c:out></p>
-<a href="register.jsp"><button type="button" >新規登録の方はこちら</button></a>
+<p>　　　ユーザー名：<c:out value="${account.name }"></c:out></p>
 	<form method="get" action="./Random_addition">
 	        <input type="submit" name="nextButton" value="足し算">
-        </form>
+    </form>
+    <form method="get" action="./Random_subtraction">
+	        <input type="submit" name="nextButton" value="引き算">
+    </form>
 
 </body>
 </html>

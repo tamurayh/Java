@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>新規登録完了しました。</h1>
-<button  onclick="location.href='./jsp/login.jsp'">ログインをする</button>
+<button  onclick="location.href='./login.jsp'">ログインをする</button>
 </body>
 </html>

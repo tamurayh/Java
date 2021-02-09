@@ -14,6 +14,6 @@
 パスワード：<input type="password" name="pass" required><br>
 <input type="submit" value="登録"><br>
 </form>
-<a href="Signup_Servlet.jsp"><button type="button" >ログインをする</button></a>
+<a href="login.jsp"><button type="button" >ログインをする</button></a>
 </body>
 </html>

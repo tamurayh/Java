@@ -10,49 +10,73 @@
     <description></description>
     <display-name>login</display-name>
     <servlet-name>login</servlet-name>
-    <jsp-file>/jsp/login.jsp</jsp-file>
+    <jsp-file>/jsp/login/login.jsp</jsp-file>
   </servlet>
     <servlet>
     <description></description>
     <display-name>addition</display-name>
     <servlet-name>addition</servlet-name>
-    <jsp-file>/jsp/addition.jsp</jsp-file>
+    <jsp-file>/jsp/addition/addition.jsp</jsp-file>
   </servlet>
     <servlet>
     <description></description>
     <display-name>results</display-name>
     <servlet-name>results</servlet-name>
-    <jsp-file>/jsp/results.jsp</jsp-file>
+    <jsp-file>/jsp/login/results.jsp</jsp-file>
   </servlet>
-      <servlet>
+    <servlet>
     <description></description>
     <display-name>error</display-name>
     <servlet-name>error</servlet-name>
-    <jsp-file>/jsp/error.jsp</jsp-file>
+    <jsp-file>/jsp/login/error.jsp</jsp-file>
   </servlet>
       <servlet>
     <description></description>
     <display-name>register</display-name>
     <servlet-name>register</servlet-name>
-    <jsp-file>/jsp/register.jsp</jsp-file>
+    <jsp-file>/jsp/login/register.jsp</jsp-file>
   </servlet>
     <servlet>
     <description></description>
     <display-name>registerSuccess</display-name>
     <servlet-name>registerSuccess</servlet-name>
-    <jsp-file>/jsp/registerSuccess.jsp</jsp-file>
+    <jsp-file>/jsp/login/registerSuccess.jsp</jsp-file>
   </servlet>
-      <servlet>
+    <servlet>
     <description></description>
     <display-name>user</display-name>
     <servlet-name>user</servlet-name>
-    <jsp-file>/jsp/user.jsp</jsp-file>
+    <jsp-file>/jsp/login/user.jsp</jsp-file>
   </servlet>
-     <servlet>
+    <servlet>
     <description></description>
     <display-name>addition_result</display-name>
     <servlet-name>addition_result</servlet-name>
-    <jsp-file>/jsp/addition_result.jsp</jsp-file>
+    <jsp-file>/jsp/addition/addition_result.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>mistake_addition</display-name>
+    <servlet-name>mistake_addition</servlet-name>
+    <jsp-file>/jsp/addition/mistake_addition.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>subtraction</display-name>
+    <servlet-name>subtraction</servlet-name>
+    <jsp-file>/jsp/subtraction/subtraction.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>subtraction_result</display-name>
+    <servlet-name>subtraction_result</servlet-name>
+    <jsp-file>/jsp/subtraction/subtraction_result.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>mistake_subtraction</display-name>
+    <servlet-name>mistake_subtraction</servlet-name>
+    <jsp-file>/jsp/subtraction/mistake_subtraction.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
@@ -87,9 +111,25 @@
     <url-pattern>/addition.jsp</url-pattern>
   </servlet-mapping>
     <servlet-mapping>
+    <servlet-name>subtraction</servlet-name>
+    <url-pattern>/subtraction.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
     <servlet-name>addition_result</servlet-name>
     <url-pattern>/addition_result.jsp</url-pattern>
   </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>mistake_addition</servlet-name>
+    <url-pattern>/mistake_addition.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>subtraction_result</servlet-name>
+    <url-pattern>/subtraction_result.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>mistake_subtraction</servlet-name>
+    <url-pattern>/mistake_subtraction.jsp</url-pattern>
+  </servlet-mapping> 
   <resource-ref>
 <description>Database Connections</description>
 <res-ref-name>jdbc/rogin</res-ref-name>

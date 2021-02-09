@@ -20,6 +20,7 @@ import userRegistration.login;
 @WebServlet("/loginServlet")
 public class loginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	String forward = null;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -39,7 +40,9 @@ public class loginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String stename = request.getParameter("uername");
 		String stepass = request.getParameter("uerpass");
-				
+		
+		
+		try {		
 				MeiboBean ab = new MeiboBean();
 				ab.setname(stename);
 				ab.setpass(stepass);
@@ -57,12 +60,22 @@ public class loginServlet extends HttpServlet {
 		            HttpSession session = request.getSession();
 		            session.setAttribute("account", returnAb);
 
-		            RequestDispatcher rd = request.getRequestDispatcher("./results.jsp");
-		            rd.forward(request, response);
+		            forward = "./results.jsp";
 		            
 					}else{
-			            RequestDispatcher rd = request.getRequestDispatcher("./error.jsp");
-			            rd.forward(request, response);}
+						
+						forward = "./error.jsp";
+					}
 		        }
+			}catch(Exception e){
+				
+				forward = "./error.jsp";
+				
+			}finally {
+				RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
+	            dispatcher.forward(request, response);
+			}
+				
+				
 			}
 		}
