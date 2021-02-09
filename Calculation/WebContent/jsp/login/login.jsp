@@ -15,6 +15,5 @@
           <input type="submit" name="nextButton" value="ログイン">
         </form>
           <a href="register.jsp"><button type="button" >新規登録の方はこちら</button></a>
-	
 </body>
 </html>
