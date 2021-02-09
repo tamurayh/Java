@@ -93,7 +93,6 @@ public class Random_subtraction extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
 	    dispatcher.forward(request, response);
 }
-
 	}
 
 
