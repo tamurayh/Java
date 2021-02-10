@@ -10,8 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import arithmetic.Randamu_sakusei;
-import arithmetic.Result_registrationsubtraction;
+import arithmetic.Result_registrationmultiplication;
 
 /**
  * Servlet implementation class Random_multiplication
@@ -34,7 +33,7 @@ public class Random_multiplication extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		HttpSession session = request.getSession(true);	
-		Randamu_sakusei RS = new Randamu_sakusei();	
+		Randamu_sakusei_multiplication RS = new Randamu_sakusei_multiplication();	
 		
 		int value1 = RS.getvalue1();
 		int value2 = RS.getvalue2();
@@ -53,7 +52,7 @@ public class Random_multiplication extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Randamu_sakusei RS = new Randamu_sakusei();
+		Randamu_sakusei_multiplication RS = new Randamu_sakusei_multiplication();
 		//ƒ†[ƒU‚Ì“š‚¦‚ğó‚¯æ‚é
 		String strAnswer = request.getParameter("answer");
 		//addition.jsp‚©‚ç–â‘è‚Ì’l‚ğó‚¯æ‚é
@@ -87,7 +86,7 @@ public class Random_multiplication extends HttpServlet {
 			
 			forward = "/mistake_multiplication.jsp";
 		}
-		Result_registrationsubtraction RR = new Result_registrationsubtraction(RS);
+		Result_registrationmultiplication RR = new Result_registrationmultiplication(RS);
 		RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
 	    dispatcher.forward(request, response);
   }
