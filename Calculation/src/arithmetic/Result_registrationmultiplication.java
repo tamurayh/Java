@@ -5,20 +5,19 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import userRegistration.MeiboBean;
-import arithmetic.Randamu_sakusei;
+import Calculationmultiplication.Randamu_sakusei_multiplication;
 
-public class Result_registrationaddition {
+public class Result_registrationmultiplication {
 	
 	final String jdbcId ="root";
     final String jdbcPass ="nanami0522";
     final String jdbcUrl = "jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
     
-    public Result_registrationaddition(Randamu_sakusei RS) {
+    public Result_registrationmultiplication(Randamu_sakusei_multiplication RS) {
     	
     	try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
     		
-    		String sql = "INSERT INTO addition (value1, value2, Answer, Acceptance, id) VALUES (?, ?, ?, ?,?)";
+    		String sql = "INSERT INTO multiplication (value1, value2, Answer, Acceptance, id) VALUES (?, ?, ?, ?,?)";
             
             PreparedStatement ps= con.prepareStatement(sql);
             
@@ -39,8 +38,6 @@ public class Result_registrationaddition {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-           
-    		
-    	}
     }
+}
 

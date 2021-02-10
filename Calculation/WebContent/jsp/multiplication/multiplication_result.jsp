@@ -8,8 +8,9 @@
 </head>
 <body>
 <h1>正解</h1>
-	<form method="get" action="./Random_addition">
+	<form method="get" action="./Random_multiplication">
 	        <input type="submit" name="nextButton" value="次の問題">
         </form>
+
 </body>
 </html>

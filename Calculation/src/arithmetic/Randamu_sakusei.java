@@ -5,16 +5,14 @@ import java.util.Random;
 public class Randamu_sakusei {
 	
     Random rnd = new Random();
-    private int value1 = rnd.nextInt(99)+1;
-    private int value2 = rnd.nextInt(99)+1;
+    private int value1 = rnd.nextInt(50)+50;
+    private int value2 = rnd.nextInt(50)+1;
     private int value3;
     private int value4;
 	private int id;
     
     private int Additionresult;
     private int Subtractionresult;
-    private int Multiplicationresult;
-    private int Divisionresult;
     
     private int Answer = 0;
     private int Acceptance = 0;
@@ -65,22 +63,6 @@ public class Randamu_sakusei {
     
     public void setSubtractionresult(int Subtractionresult) {
         this.Subtractionresult = Subtractionresult;
-    }
-    
-    public int getMultiplicationresult() {
-        return Multiplicationresult;
-    }
-    
-    public void setMultiplicationresult(int Multiplicationresult) {
-        this.Multiplicationresult = Multiplicationresult;
-    }
-    
-    public int getDivisionresult() {
-        return Divisionresult;
-    }
-    
-    public void setDivisionresult(int Divisionresult) {
-        this.Divisionresult = Divisionresult;
     }
     
     public int getAnswer() {

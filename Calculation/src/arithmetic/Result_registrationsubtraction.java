@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class Result_registrationsubtraction {
 	
 	final String jdbcId ="root";
-    final String jdbcPass ="ytyt0627";
+    final String jdbcPass ="nanami0522";
     final String jdbcUrl = "jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
     
     public Result_registrationsubtraction(Randamu_sakusei RS) {

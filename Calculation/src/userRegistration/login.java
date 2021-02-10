@@ -15,7 +15,7 @@ public class login {
     // ログインアカウントを探す
     public  MeiboBean findAccount(MeiboBean ab) {
     	final String jdbcId ="root";
-        final String jdbcPass ="ytyt0627";
+        final String jdbcPass ="nanami0522";
         final String jdbcUrl = "jdbc:mysql://localhost:3306/sample?characterEncoding=UTF-8&serverTimezone=JST";
 
     	// 戻り値の用意

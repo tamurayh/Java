@@ -16,6 +16,9 @@
     <form method="get" action="./Random_subtraction">
 	        <input type="submit" name="nextButton" value="引き算">
     </form>
+       <form method="get" action="./Random_multiplication">
+	        <input type="submit" name="nextButton" value="引き算">
+    </form>
 
 </body>
 </html>

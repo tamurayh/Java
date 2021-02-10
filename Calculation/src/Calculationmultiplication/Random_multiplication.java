@@ -1,4 +1,4 @@
-package Calculationsubtraction;
+package Calculationmultiplication;
 
 import java.io.IOException;
 
@@ -14,16 +14,16 @@ import arithmetic.Randamu_sakusei;
 import arithmetic.Result_registrationsubtraction;
 
 /**
- * Servlet implementation class Random_subtraction
+ * Servlet implementation class Random_multiplication
  */
-@WebServlet("/Random_subtraction")
-public class Random_subtraction extends HttpServlet {
+@WebServlet("/Random_multiplication")
+public class Random_multiplication extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	String forward = null;
+	String forward = null;   
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Random_subtraction() {
+    public Random_multiplication() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,7 +33,6 @@ public class Random_subtraction extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
 		HttpSession session = request.getSession(true);	
 		Randamu_sakusei RS = new Randamu_sakusei();	
 		
@@ -43,7 +42,7 @@ public class Random_subtraction extends HttpServlet {
 		RS.setvalue3(value1);
 		RS.setvalue4(value2);
         session.setAttribute("Randomadd", RS);
-        forward = "/subtraction.jsp";
+        forward = "/multiplication.jsp";
         
         RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
         dispatcher.forward(request, response);
@@ -54,7 +53,6 @@ public class Random_subtraction extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
 		Randamu_sakusei RS = new Randamu_sakusei();
 		//ユーザの答えを受け取る
 		String strAnswer = request.getParameter("answer");
@@ -69,7 +67,7 @@ public class Random_subtraction extends HttpServlet {
 		int addvalue2 = Integer.valueOf(value2).intValue();
 		int id= Integer.valueOf(userid).intValue();
 		//正解の答えを呼び出す
-		int Additionresult = addvalue1 - addvalue2;
+		int Additionresult = addvalue1 * addvalue2;
 		request.setAttribute("Additionresult",Additionresult);
 		//データベースに格納する値を保存
 		RS.setvalue3(addvalue1);
@@ -81,18 +79,17 @@ public class Random_subtraction extends HttpServlet {
 			
 			RS.setAcceptance(1);
 		    
-			forward = "/subtraction_result.jsp";
+			forward = "/multiplication_result.jsp";
 			
 		} else {
 			
 			RS.setAcceptance(0);
 			
-			forward = "/mistake_subtraction.jsp";
+			forward = "/mistake_multiplication.jsp";
 		}
 		Result_registrationsubtraction RR = new Result_registrationsubtraction(RS);
 		RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
 	    dispatcher.forward(request, response);
   }
+
 }
-
-

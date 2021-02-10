@@ -78,6 +78,24 @@
     <servlet-name>mistake_subtraction</servlet-name>
     <jsp-file>/jsp/subtraction/mistake_subtraction.jsp</jsp-file>
   </servlet>
+    <servlet>
+    <description></description>
+    <display-name>mistake_multiplication</display-name>
+    <servlet-name>mistake_multiplication</servlet-name>
+    <jsp-file>/jsp/multiplication/mistake_multiplication.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>multiplication_result</display-name>
+    <servlet-name>multiplication_result</servlet-name>
+    <jsp-file>/jsp/multiplication/multiplication_result.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>multiplication</display-name>
+    <servlet-name>multiplication</servlet-name>
+    <jsp-file>/jsp/multiplication/multiplication.jsp</jsp-file>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
@@ -129,6 +147,18 @@
     <servlet-mapping>
     <servlet-name>mistake_subtraction</servlet-name>
     <url-pattern>/mistake_subtraction.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>mistake_multiplication</servlet-name>
+    <url-pattern>/mistake_multiplication.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>multiplication_result</servlet-name>
+    <url-pattern>/multiplication_result.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>multiplication</servlet-name>
+    <url-pattern>/multiplication.jsp</url-pattern>
   </servlet-mapping> 
   <resource-ref>
 <description>Database Connections</description>
