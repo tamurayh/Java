@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+	body, .problem {
+		background-image: url("../images/kokuban.jpg");
+	}
+
+@media screen and (min-width:1024px) {
+
+	.problem h2 {
+		font-family: 'Impact';
+		font-size: 100px;
+		text-align: center;
+		color: #fff;
+	}
+	.problem p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 65px;
+		text-align: left;
+		color: #fff;
+	}
+}
+@media screen and (min-width:600px) and ( max-width:1024px){
+	
+		.problem h2 {
+		font-family: 'Impact';
+		font-size: 55px;
+		text-align: center;
+		color: #fff;
+	}
+	.problem p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 30px;
+		text-align: left;
+		color: #fff;
+	}
+}
+@media screen and  (max-width:600px){
+	
+		.problem h2 {
+		font-family: 'Impact';
+		font-size: 55px;
+		text-align: center;
+		color: #fff;
+	}
+	.problem p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 35px;
+		text-align: left;
+		color: #fff;
+	}
+}

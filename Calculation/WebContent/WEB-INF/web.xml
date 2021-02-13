@@ -96,6 +96,12 @@
     <servlet-name>multiplication</servlet-name>
     <jsp-file>/jsp/multiplication/multiplication.jsp</jsp-file>
   </servlet>
+    <servlet>
+    <description></description>
+    <display-name>HOME</display-name>
+    <servlet-name>HOME</servlet-name>
+    <jsp-file>/jsp/login/HOME.jsp</jsp-file>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
@@ -159,6 +165,10 @@
     <servlet-mapping>
     <servlet-name>multiplication</servlet-name>
     <url-pattern>/multiplication.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>HOME</servlet-name>
+    <url-pattern>/HOME.jsp</url-pattern>
   </servlet-mapping> 
   <resource-ref>
 <description>Database Connections</description>

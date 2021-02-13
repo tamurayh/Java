@@ -7,7 +7,7 @@
 <title>login</title>
 </head>
 <body>
-	<h1> ログインをしてください。</h1>
+	<h1> ログインをしてください</h1>
 	
         <form method="Post" action="./loginServlet">
           ユーザー名: <input type="text" name="uername"required><br>
