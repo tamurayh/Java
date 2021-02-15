@@ -8,15 +8,17 @@
 <title>問題ページ</title>
 </head>
 <body>
-		<font size="5">練習問題引き算</font>
-		
-<p>計算問題 ユーザー名：<c:out value="${account.name }"></c:out></p>
-<br>
-<c:out value="${Randomadd.value1}"></c:out>
--
-<c:out value="${Randomadd.value2}"></c:out>
-=
-<form method="Post" action="./Random_subtraction">
+
+<h2>練習問題割り算</h2>
+
+ <p>計算問題 ユーザー名：<c:out value="${account.name }"></c:out></p>
+ <br>
+ <p> <c:out value="${Randomadd.value1}"></c:out>
+  ÷
+ <c:out value="${Randomadd.value2}"></c:out>
+  =</p>
+  
+<form method="Post" action="./Random_division">
 <input type="hidden" name="value1" value= "${Randomadd.value1}">
 <input type="hidden" name="value2" value= "${Randomadd.value2}">
 <input type="hidden" name="userid" value= "${account.id}">

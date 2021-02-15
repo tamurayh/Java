@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>問題ページ</title>
+<title>結果ページ</title>
 </head>
 <body>
 <p>正解の答えは</p>

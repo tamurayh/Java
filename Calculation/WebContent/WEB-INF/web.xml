@@ -98,6 +98,24 @@
   </servlet>
     <servlet>
     <description></description>
+    <display-name>division</display-name>
+    <servlet-name>division</servlet-name>
+    <jsp-file>/jsp/division/division.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>division_result</display-name>
+    <servlet-name>division_result</servlet-name>
+    <jsp-file>/jsp/division/division_result.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>mistake_division</display-name>
+    <servlet-name>mistake_division</servlet-name>
+    <jsp-file>/jsp/division/mistake_division.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
     <display-name>HOME</display-name>
     <servlet-name>HOME</servlet-name>
     <jsp-file>/jsp/login/HOME.jsp</jsp-file>
@@ -165,6 +183,18 @@
     <servlet-mapping>
     <servlet-name>multiplication</servlet-name>
     <url-pattern>/multiplication.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>division</servlet-name>
+    <url-pattern>/division.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>division_result</servlet-name>
+    <url-pattern>/division_result.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>mistake_division</servlet-name>
+    <url-pattern>/mistake_division.jsp</url-pattern>
   </servlet-mapping> 
     <servlet-mapping>
     <servlet-name>HOME</servlet-name>

@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="problem">
- <h2>練習問題足し算</h2>
+　<h2>練習問題足し算</h2>
         
  <p>計算問題 ユーザー名：<c:out value="${account.name }"></c:out></p>
  <br>

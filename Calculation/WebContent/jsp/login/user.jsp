@@ -15,8 +15,12 @@
     <form method="get" action="./Random_subtraction">
 	        <input type="submit" name="nextButton" value="引き算">
     </form>
-       <form method="get" action="./Random_multiplication">
+    <form method="get" action="./Random_multiplication">
 	        <input type="submit" name="nextButton" value="掛け算">
+    </form>
+    
+    <form method="get" action="./Random_division">
+	        <input type="submit" name="nextButton" value="割り算">
     </form>
 
 </body>
