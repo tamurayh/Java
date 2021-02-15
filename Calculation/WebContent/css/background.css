@@ -2,6 +2,7 @@
 
 	body, .problem {
 		background-image: url("../images/kokuban.jpg");
+		background-size:100%;
 	}
 
 @media screen and (min-width:1024px) {
@@ -20,9 +21,32 @@
 		color: #fff;
 	}
 }
+
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+	font-size: 65px;
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #da3c41;
+	outline: none;
+}
 @media screen and (min-width:600px) and ( max-width:1024px){
 	
-		.problem h2 {
+.problem h2 {
 		font-family: 'Impact';
 		font-size: 55px;
 		text-align: center;
@@ -52,3 +76,5 @@
 		color: #fff;
 	}
 }
+
+　　　botan{}

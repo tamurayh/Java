@@ -19,8 +19,8 @@ public class Result_registrationsubtraction {
             
             PreparedStatement ps= con.prepareStatement(sql);
             
-            ps.setInt(1, RS.getvalue1());
-            ps.setInt(2, RS.getvalue2());
+            ps.setInt(1, RS.getvalue3());
+            ps.setInt(2, RS.getvalue4());
             ps.setInt(3, RS.getAnswer());
             ps.setInt(4, RS.getAcceptance());
             ps.setInt(5, RS.getid());
