@@ -18,7 +18,7 @@ public class Result_registrationdivision {
     	
     	try (Connection con = DriverManager.getConnection(jdbcUrl, jdbcId, jdbcPass)) {
     		
-    		String sql = "INSERT INTO division (value1, value2, Answer, Acceptance, id) VALUES (?, ?, ?, ?,?)";
+    		String sql = "INSERT INTO divsion (value1, value2, Answer, Acceptance, id) VALUES (?, ?, ?, ?,?)";
             
             PreparedStatement ps= con.prepareStatement(sql);
             

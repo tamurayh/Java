@@ -1,15 +1,15 @@
 package Calculationdivision;
 
-import java.util.ArrayList;
 import java.util.Random;
 
-public class Randamu_sakusei_division {
+public class Randamu_sakusei_division{
 	
 	   Random rnd = new Random();
 	     
 	    private int[] value = {2,3,4,6,8,9,10,20,30,33};
 	   
 	    private int value1 = value [rnd.nextInt(10)];
+	    private int value2;
 	    private int value3;
 	    private int value4;
 		private int id;
@@ -26,6 +26,15 @@ public class Randamu_sakusei_division {
 
 	    public void setvalue1(int value1) {
 	        this.value1 = value1;
+	    }
+	    
+	    public int getvalue2() {
+	    return value2;
+
+	    }
+
+	    public int setvalue2(int value2) {
+	        return this.value2 = value2;
 	    }
 	        
 	    public int getvalue3() {

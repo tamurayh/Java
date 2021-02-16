@@ -37,31 +37,28 @@ public class Random_division extends HttpServlet {
 		Randamu_sakusei_division RS = new Randamu_sakusei_division();	
 		
 		int value1 = RS.getvalue1();
-		
+		int value2 = RS.getvalue2();
 		switch (value1) {
 		
-		case 2,4,8,10,20:{
+		case 2,4,8,10,20:
 			
-			int value2 = 2;
+			value2 = RS.setvalue2(2);
 			RS.setvalue3(value1);
 			RS.setvalue4(value2);
-	        session.setAttribute("Randomadd", RS);
-		}
+			break;
 			
-		case 3,6,9,30,33:{
-			int value2 = 3;
+		case 3,6,9,30,33:
+			value2 = RS.setvalue2(3);;
 			RS.setvalue3(value1);
 			RS.setvalue4(value2);
-	        session.setAttribute("Randomadd", RS);
+			break;
 		}
-		}
-		
-        forward = "/multiplication.jsp";
-        
+        forward = "/division.jsp";
+		session.setAttribute("Randomadd", RS);
         RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
         dispatcher.forward(request, response);
 	}
-
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -81,7 +78,7 @@ public class Random_division extends HttpServlet {
 		int addvalue2 = Integer.valueOf(value2).intValue();
 		int id= Integer.valueOf(userid).intValue();
 		//正解の答えを呼び出す
-		int Additionresult = addvalue1 * addvalue2;
+		int Additionresult = addvalue1 / addvalue2;
 		request.setAttribute("Additionresult",Additionresult);
 		//データベースに格納する値を保存
 		RS.setvalue3(addvalue1);
@@ -93,13 +90,13 @@ public class Random_division extends HttpServlet {
 			
 			RS.setAcceptance(1);
 		    
-			forward = "/multiplication_result.jsp";
+			forward = "/division_result.jsp";
 			
 		} else {
 			
 			RS.setAcceptance(0);
 			
-			forward = "/mistake_multiplication.jsp";
+			forward = "/mistake_division.jsp";
 		}
 		Result_registrationdivision RR = new Result_registrationdivision(RS);
 		RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
