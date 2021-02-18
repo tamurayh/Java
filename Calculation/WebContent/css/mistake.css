@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1024px) {
+
+	body, .mistake {
+		background-image: url("../images/kokuban.jpg");
+		background-size:100%;
+	}
+	
+		.mistake p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 65px;
+		text-align: left;
+		color: #fff;
+	}
+}
+
+@media screen and (min-width:600px) and ( max-width:1024px){
+	
+		body, .mistake {
+		background-image: url("../images/kokuban.jpg");
+		background-size:150%;
+	}
+	
+		.mistake p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 65px;
+		text-align: left;
+		color: #fff;
+	}
+}
+
+@media screen and  (max-width:600px){
+	
+			body, .mistake {
+		background-image: url("../images/kokuban.jpg");
+		background-size:200%;
+	}
+	
+		.mistake p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 65px;
+		text-align: left;
+		color: #fff;
+	}
+}

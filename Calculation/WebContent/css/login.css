@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+	body, .login {
+		background-image: url("../images/login.jpg");
+		background-size:100%;
+	}
+
+	.login h1 {
+		font-family: 'Impact';
+		font-size: 50px;
+		text-align: center;
+		color: #fff;
+	}
+	.login p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 65px;
+		text-align: left;
+		color: #fff;
+	}

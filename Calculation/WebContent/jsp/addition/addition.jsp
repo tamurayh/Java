@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <title>問題ページ</title>
 <link rel="stylesheet" type="text/css" href="./css/background.css"/>
-<link rel="stylesheet" type="text/css" href="./css/background.css" media="screen and(min-width:0px)"/>
 </head>
 <body>
 <div class="problem">

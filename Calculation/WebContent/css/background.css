@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
+@media screen and (min-width:1024px) {
+	
 	body, .problem {
 		background-image: url("../images/kokuban.jpg");
-		background-size:100%;
+		background-size:200%;
 	}
-
-@media screen and (min-width:1024px) {
 
 	.problem h2 {
 		font-family: 'Impact';
-		font-size: 100px;
+		font-size: 50px;
 		text-align: center;
 		color: #fff;
 	}
@@ -46,9 +46,14 @@
 }
 @media screen and (min-width:600px) and ( max-width:1024px){
 	
+	body, .problem {
+		background-image: url("../images/kokuban.jpg");
+		background-size:200%;
+	}
+	
 .problem h2 {
 		font-family: 'Impact';
-		font-size: 55px;
+		font-size: 40px;
 		text-align: center;
 		color: #fff;
 	}
@@ -59,21 +64,69 @@
 		text-align: left;
 		color: #fff;
 	}
+	.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+	font-size: 65px;
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #da3c41;
+	outline: none;
+}
 }
 @media screen and  (max-width:600px){
+	body, .problem {
+		background-image: url("../images/kokuban.jpg");
+		background-size:300%;
+	}
 	
 		.problem h2 {
 		font-family: 'Impact';
-		font-size: 55px;
+		font-size: 40px;
 		text-align: center;
 		color: #fff;
 	}
 	.problem p {
 		display: inline-block;
 		font-family: 'Georgia';
-		font-size: 35px;
+		font-size: 30px;
 		text-align: left;
 		color: #fff;
 	}
+	.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+	font-size: 65px;
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #da3c41;
+	outline: none;
+}
 }
 

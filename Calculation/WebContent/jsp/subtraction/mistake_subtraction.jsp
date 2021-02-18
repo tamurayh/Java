@@ -4,20 +4,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <title>結果ページ</title>
+<link rel="stylesheet" type="text/css" href="./css/mistake.css"/>
 </head>
 <body>
-<p>正解の答えは</p>
-	<c:out value="${Randomadd.value1}"></c:out>
+<div class="mistake">
+	<p>正解の答えは</p>
+	<br>
+	<p><c:out value="${Randomadd.value1}"></c:out>
 	 -
 	<c:out value="${Randomadd.value2}"></c:out>
 	=
-	<%= request.getAttribute("Additionresult") %>
+	<%= request.getAttribute("Additionresult") %></p>
         
 	<form method="get" action="./Random_subtraction">
 	<input type="submit" name="nextButton" value="次の問題">
 	</form>
-
+</div>
 </body>
 </html>
