@@ -4,10 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <title>ユーザーページ</title>
+<link rel="stylesheet" type="text/css" href="./css/user.css"/>
 </head>
 <body>
+<div class="user">
 <p>　　　ユーザー名：<c:out value="${account.name }"></c:out></p>
 	<form method="get" action="./Random_addition">
 	        <input type="submit" name="nextButton" value="足し算">
@@ -22,6 +24,6 @@
     <form method="get" action="./Random_division">
 	        <input type="submit" name="nextButton" value="割り算">
     </form>
-
+</div>
 </body>
 </html>

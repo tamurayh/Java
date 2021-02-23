@@ -9,12 +9,12 @@
 <link rel="stylesheet" type="text/css" href="./css/login.css"/>
 </head>
 <body>
-<div class="mistake">
+<div class="login">
 <form action="./Signup_Servlet" method="post">
-<p>すべて入力してください</p>
+<h1>すべて入力してください</h1>
 
-ユーザー名：<input type="text" name="name" required><br>
-パスワード：<input type="password" name="pass" required><br>
+<p>ユーザー名：</p><input type="text" name="name" required><br>
+<p>パスワード：</p><input type="password" name="pass" required><br>
 <input type="submit" value="登録"><br>
 </form>
 <a href="login.jsp"><button type="button" >ログインをする</button></a>

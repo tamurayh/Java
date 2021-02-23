@@ -1,19 +1,20 @@
 @charset "UTF-8";
 
+
 @media screen and (min-width:1024px) {
 
-	body, .login {
+	body, .user {
 		background-image: url("../images/login.jpg");
 		background-size:100%;
 	}
 
-	.login h1 {
+	.user h1 {
 		font-family: 'Impact';
 		font-size: 50px;
 		text-align: center;
 		color: #fff;
 	}
-	.login p {
+	.user p {
 		display: inline-block;
 		font-family: 'Georgia';
 		font-size: 65px;
@@ -21,41 +22,41 @@
 		color: #fff;
 	}
 }
-@media screen and (min-width:600px) and ( max-width:1024px){
-		body, .login {
+@media screen and (min-width:650px) and ( max-width:1024px){
+		body, .user {
 		background-image: url("../images/login.jpg");
 		background-size:90%;
 	}
 
-	.login h1 {
+	.user h1 {
 		font-family: 'Impact';
 		font-size: 50px;
 		text-align: center;
 		color: #fff;
 	}
-	.login p {
+	.user p {
 		display: inline-block;
 		font-family: 'Georgia';
-		font-size: 25px;
+		font-size: 40px;
 		text-align: left;
 		color: #fff;
 	}
 }
 	
-@media screen and  (max-width:600px){	
+@media screen and  (max-width:650px){	
 	
-			body, .login {
+			body, .user {
 		background-image: url("../images/login.jpg");
 		background-size:100%;
 	}
 
-	.login h1 {
+	.user h1 {
 		font-family: 'Impact';
 		font-size: 50px;
 		text-align: center;
 		color: #fff;
 	}
-	.login p {
+	.user p {
 		display: inline-block;
 		font-family: 'Georgia';
 		font-size: 25px;
