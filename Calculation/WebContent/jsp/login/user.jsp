@@ -12,17 +12,17 @@
 <div class="user">
 <p>　　　ユーザー名：<c:out value="${account.name }"></c:out></p>
 	<form method="get" action="./Random_addition">
-	        <input type="submit" name="nextButton" value="足し算">
+	        <input class="btn btn--orange" type="submit" name="nextButton" value="足し算">
     </form>
     <form method="get" action="./Random_subtraction">
-	        <input type="submit" name="nextButton" value="引き算">
+	        <input class="btn btn--orange" type="submit" name="nextButton" value="引き算">
     </form>
     <form method="get" action="./Random_multiplication">
-	        <input type="submit" name="nextButton" value="掛け算">
+	        <input class="btn btn--orange" type="submit" name="nextButton" value="掛け算">
     </form>
     
     <form method="get" action="./Random_division">
-	        <input type="submit" name="nextButton" value="割り算">
+	        <input class="btn btn--orange" type="submit" name="nextButton" value="割り算">
     </form>
 </div>
 </body>

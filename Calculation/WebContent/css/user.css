@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 @media screen and (min-width:1024px) {
 
 	body, .user {
@@ -21,6 +22,20 @@
 		text-align: left;
 		color: #fff;
 	}
+	.btn--orange,
+		input.btn--orange {
+  		color: #fff;
+ 		background-color: #00d5eb;
+ 		width:200px;
+ 		height:100px;
+}
+	.btn--orange:hover,
+	input.btn--orange:hover {
+  		color: #fff;
+  		background: #00d5eb;
+  		width:100px;
+ 		height:50px;
+}
 }
 @media screen and (min-width:650px) and ( max-width:1024px){
 		body, .user {
@@ -41,6 +56,21 @@
 		text-align: left;
 		color: #fff;
 	}
+		.btn--orange,
+		a.btn--orange {
+  		color: #fff;
+ 		background-color: #00d5eb;
+ 		width:100px;
+ 		height:50px;
+}
+	.btn--orange:hover,
+	a.btn--orange:hover {
+  		color: #fff;
+  		background: #00d5eb;
+  		width:100px;
+ 		height:50px;
+}
+	
 }
 	
 @media screen and  (max-width:650px){	
@@ -63,4 +93,18 @@
 		text-align: left;
 		color: #fff;
 	}
+			.btn--orange,
+		a.btn--orange {
+  		color: #fff;
+ 		background-color: #00d5eb;
+ 		width:100px;
+ 		height:50px;
+}
+	.btn--orange:hover,
+	a.btn--orange:hover {
+  		color: #fff;
+  		background: #00d5eb;
+  		width:100px;
+ 		height:50px;
+}
 }
