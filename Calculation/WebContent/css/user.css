@@ -1,12 +1,40 @@
 @charset "UTF-8";
 
 
+@media screen and (min-width:1250px) {
 
-@media screen and (min-width:1024px) {
+	body,
 
-	body, .user {
-		background-image: url("../images/login.jpg");
+	#canvas {
+	  width: 100%;
+  	  height: 100PX;
+  	  margin:0px 0px 0px;
+  	  background-image: url(../images/geometric.jpg);
+
+	}
+	
+	.canvas userheader {
+	    height:100%;
+	
+	}
+	
+	.userheader p {
+	    font-family: 'Impact';
+		font-size: 50px;
+		text-align: left;
+		color: #fff;
+		margin:0;
+		padding:0;
+	} 
+	
+	.user {
+		background-image: url("../images/kairo.jpg");
 		background-size:100%;
+		width: 65%;
+		float:left;
+		height:335px;
+		padding:30px;
+		margin:0px 10px;
 	}
 
 	.user h1 {
@@ -24,23 +52,92 @@
 	}
 	.btn--orange,
 		input.btn--orange {
-  		color: #fff;
- 		background-color: #00d5eb;
+  		color: #000;
+ 		background-color: #80ff80;
  		width:200px;
- 		height:100px;
+ 		height:50px;
+ 		opacity:0.5;
+ 		font-weight:900;
 }
 	.btn--orange:hover,
 	input.btn--orange:hover {
-  		color: #fff;
-  		background: #00d5eb;
-  		width:100px;
+  		color: #000;
+  		background: #008000;
+  		width:200px;
  		height:50px;
+ 		font-weight:900;
+ 		opacity:1;
 }
+	.box{	
+		background-image: url("../images/matrix.jpg");
+		width:22%;
+		height:335px;
+		padding:30px;
+		margin:0px 10px;
+		float:right; 
+	}
+		.scroll{
+  		  overflow:hidden;
+		  overflow-y:scroll;
 }
-@media screen and (min-width:650px) and ( max-width:1024px){
-		body, .user {
-		background-image: url("../images/login.jpg");
-		background-size:90%;
+	.box h1{
+		background-color: #004000;
+		border: 2px dashed #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 0 4px #8d1e47;
+		color: #FFA500;
+		margin: 2em 0;
+		padding: 2em;
+		text-align: center;
+	}
+	.box p{
+		text-align: center;
+	}
+	
+	.btn{
+	  	color: #fff;
+  		background: #000;
+  		width:200px;
+ 		height:75px;
+		clear: left;
+	}
+
+}
+
+@media screen and (min-width:1024px) and ( max-width:1250px) {
+
+	body,
+
+	#canvas {
+	  width: 100%;
+  	  height: 100PX;
+  	  margin:0px 0px 0px;
+  	  background-image: url(../images/geometric.jpg);
+
+	}
+	
+	.canvas userheader {
+	    height:100%;
+	
+	}
+	
+	.userheader p {
+	    font-family: 'Impact';
+		font-size: 50px;
+		text-align: left;
+		color: #fff;
+		margin:0;
+		padding:0;
+	} 
+	
+	.user {
+		background-image: url("../images/kairo.jpg");
+		background-size:100%;
+		width: 65%;
+		float:left;
+		height:335px;
+		padding:30px;
+		margin:0px 10px;
 	}
 
 	.user h1 {
@@ -52,27 +149,165 @@
 	.user p {
 		display: inline-block;
 		font-family: 'Georgia';
-		font-size: 40px;
+		font-size: 65px;
 		text-align: left;
 		color: #fff;
 	}
-		.btn--orange,
-		a.btn--orange {
-  		color: #fff;
- 		background-color: #00d5eb;
- 		width:100px;
+	.btn--orange,
+		input.btn--orange {
+  		color: #000;
+ 		background-color: #80ff80;
+ 		width:200px;
  		height:50px;
+ 		opacity:0.5;
+ 		font-weight:900;
 }
 	.btn--orange:hover,
-	a.btn--orange:hover {
-  		color: #fff;
-  		background: #00d5eb;
-  		width:100px;
+	input.btn--orange:hover {
+  		color: #000;
+  		background: #008000;
+  		width:200px;
  		height:50px;
+ 		font-weight:900;
+ 		opacity:1;
 }
-	
+	.box{	
+		background-image: url("../images/matrix.jpg");
+		width:19%;
+		height:335px;
+		padding:30px;
+		margin:0px 10px;
+		float:right; 
+	}
+		.scroll{
+  		  overflow:hidden;
+		  overflow-y:scroll;
 }
+	.box h1{
+		background-color: #004000;
+		border: 2px dashed #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 0 4px #8d1e47;
+		color: #FFA500;
+		margin: 2em 0;
+		padding: 2em;
+		text-align: center;
+	}
+	.box p{
+		text-align: center;
+	}
 	
+	.btn{
+	  	color: #fff;
+  		background: #000;
+  		width:200px;
+ 		height:75px;
+		clear: left;
+	}
+
+}
+@media screen and (min-width:650px) and ( max-width:1024px){
+body,
+
+	#canvas {
+	  width: 100%;
+  	  height: 100PX;
+  	  margin:0px 0px 0px;
+  	  background-image: url(../images/geometric.jpg);
+
+	}
+	
+	.canvas userheader {
+	    height:100%;
+	
+	}
+	
+	.userheader p {
+	    font-family: 'Impact';
+		font-size: 30px;
+		text-align: left;
+		color: #fff;
+		margin:0;
+		padding:0;
+	} 
+	
+	.user {
+		background-image: url("../images/kairo.jpg");
+		background-size:100%;
+		width: 50%;
+		float:left;
+		height:335px;
+		padding:30px;
+		margin:0px 10px;
+	}
+
+	.user h1 {
+		font-family: 'Impact';
+		font-size: 50px;
+		text-align: center;
+		color: #fff;
+	}
+	.user p {
+		display: inline-block;
+		font-family: 'Georgia';
+		font-size: 65px;
+		text-align: left;
+		color: #fff;
+	}
+	.btn--orange,
+		input.btn--orange {
+  		color: #000;
+ 		background-color: #80ff80;
+ 		width:200px;
+ 		height:50px;
+ 		opacity:0.5;
+ 		font-weight:900;
+}
+	.btn--orange:hover,
+	input.btn--orange:hover {
+  		color: #000;
+  		background: #008000;
+  		width:200px;
+ 		height:50px;
+ 		font-weight:900;
+ 		opacity:1;
+}
+	.box{	
+		background-image: url("../images/matrix.jpg");
+		width:22%;
+		height:335px;
+		padding:30px;
+		margin:0px 10px;
+		float:right; 
+	}
+		.scroll{
+  		  overflow:hidden;
+		  overflow-y:scroll;
+}
+	.box h1{
+		background-color: #004000;
+		border: 2px dashed #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 0 4px #8d1e47;
+		color: #FFA500;
+		margin: 2em 0;
+		padding: 1em;
+		text-align: center;
+	}
+	.box p{
+		text-align: center;
+	}
+	
+	.btn{
+	  	color: #fff;
+  		background: #000;
+  		width:200px;
+ 		height:75px;
+		clear: left;
+	}
+
+}
+
 @media screen and  (max-width:650px){	
 	
 			body, .user {
@@ -108,3 +343,4 @@
  		height:50px;
 }
 }
+
