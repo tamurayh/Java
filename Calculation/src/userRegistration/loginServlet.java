@@ -60,7 +60,7 @@ public class loginServlet extends HttpServlet {
 		            HttpSession session = request.getSession();
 		            session.setAttribute("account", returnAb);
 
-		            forward = "./results.jsp";
+		            forward = "./user.jsp";
 		            
 					}else{
 						

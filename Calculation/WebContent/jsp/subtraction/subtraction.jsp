@@ -30,6 +30,7 @@
  </div> 
 <input type="submit" name="nextButton" value="決定して次へ">
 </form> 
+ <a href="user.jsp"><button type="button" >ユーザーページに戻る</button></a>
 </div>
 </body>
 </html>

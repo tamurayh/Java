@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import arithmetic.Randamu_sakusei;
 import arithmetic.Result_registrationaddition;
+import arithmetic.Result_registrationsubtraction;
 
 /**
  * Servlet implementation class Random_addition

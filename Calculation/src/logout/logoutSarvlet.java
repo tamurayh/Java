@@ -33,7 +33,7 @@ public class logoutSarvlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		HttpSession session = request.getSession();
 		session.removeAttribute("account");
-		forward = "./user.jsp";
+		forward = "./login.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
         dispatcher.forward(request, response);
