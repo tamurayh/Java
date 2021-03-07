@@ -17,7 +17,17 @@
 </div>
 </header>
 <article>
-<div class="user">
+<div class="user scroll">
+<h1>正解数/問題数</h1>
+<br>
+<p>足し算 　<c:out value="${count.count_addition}"></c:out>/<c:out value="${count.count_additionall}"></c:out></p>
+<br>
+<p>引き算　　<c:out value="${count.count_subtraction}"></c:out>/<c:out value="${count.count_subtractionall}"></c:out></p>
+<br>
+<p>掛け算　　<c:out value="${count.count_muitiplication}"></c:out>/<c:out value="${count.count_muitiplicationall}"></c:out></p>
+<br>
+<p>割り算　　<c:out value="${count.count_divsion}"></c:out>/<c:out value="${count.count_divsionall}"></c:out></p>
+<br>
 </div>
 </article>
 <aside>

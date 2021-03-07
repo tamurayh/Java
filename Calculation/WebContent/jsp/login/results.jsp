@@ -11,7 +11,10 @@
 <body>
 <div class="mistake">
 <p>ログイン成功</p>
-<a href="user.jsp"><button type="button" >ユーザーページ</button></a>
+<form method="Post" action="./count_Sarvlet">
+ <input type="hidden" name="userid" value= "${account.id}">
+ <input type="submit" name="nextButton" value="ユーザーページ">
+</form>
 </div>
 </body>
 </html>

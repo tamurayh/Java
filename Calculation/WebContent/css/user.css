@@ -46,8 +46,8 @@
 	.user p {
 		display: inline-block;
 		font-family: 'Georgia';
-		font-size: 65px;
-		text-align: left;
+		font-size: 25px;
+		text-align:right;
 		color: #fff;
 	}
 	.btn--orange,
@@ -89,6 +89,7 @@
 		margin: 2em 0;
 		padding: 2em;
 		text-align: center;
+
 	}
 	.box p{
 		text-align: center;
@@ -192,6 +193,7 @@
 		margin: 2em 0;
 		padding: 2em;
 		text-align: center;
+		font-size: 26px;
 	}
 	.box p{
 		text-align: center;
@@ -308,11 +310,39 @@ body,
 
 }
 
-@media screen and  (max-width:650px){	
+@media screen and (min-width:350px)and  (max-width:650px){	
+body,
+
+	#canvas {
+	  width: 100%;
+  	  height: 100PX;
+  	  margin:0px 0px 0px;
+  	  background-image: url(../images/geometric.jpg);
+
+	}
 	
-			body, .user {
-		background-image: url("../images/login.jpg");
+	.canvas userheader {
+	    height:100%;
+	
+	}
+	
+	.userheader p {
+	    font-family: 'Impact';
+		font-size: 30px;
+		text-align: left;
+		color: #fff;
+		margin:0;
+		padding:0;
+	} 
+	
+	.user {
+		background-image: url("../images/kairo.jpg");
 		background-size:100%;
+		width: 68%;
+		float:left;
+		height:335px;
+		padding:30px;
+		margin:0px 0px;
 	}
 
 	.user h1 {
@@ -324,23 +354,60 @@ body,
 	.user p {
 		display: inline-block;
 		font-family: 'Georgia';
-		font-size: 25px;
+		font-size: 65px;
 		text-align: left;
 		color: #fff;
 	}
-			.btn--orange,
-		a.btn--orange {
-  		color: #fff;
- 		background-color: #00d5eb;
- 		width:100px;
+	.btn--orange,
+		input.btn--orange {
+  		color: #000;
+ 		background-color: #80ff80;
+ 		width:200px;
  		height:50px;
+ 		opacity:0.5;
+ 		font-weight:900;
 }
 	.btn--orange:hover,
-	a.btn--orange:hover {
-  		color: #fff;
-  		background: #00d5eb;
-  		width:100px;
+	input.btn--orange:hover {
+  		color: #000;
+  		background: #008000;
+  		width:200px;
  		height:50px;
+ 		font-weight:900;
+ 		opacity:1;
 }
+	.box{	
+		background-image: url("../images/matrix.jpg");
+		width:66%;
+		height:120px;
+		padding:30px;
+		margin:0px 0px;
+		clear: left; 
+	}
+		.scroll{
+  		  overflow:hidden;
+		  overflow-y:scroll;
 }
+	.box h1{
+		background-color: #004000;
+		border: 2px dashed #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 0 4px #8d1e47;
+		color: #FFA500;
+		margin: 2em 0;
+		padding: 1em;
+		text-align: center;
+	}
+	.box p{
+		text-align: center;
+	}
+	
+	.btn{
+	  	color: #fff;
+  		background: #000;
+  		width:85%;
+ 		height:75px;
+		clear: left;
+	}
 
+}

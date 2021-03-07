@@ -21,7 +21,7 @@
 <form method="Post" action="./Random_multiplication">
 <input type="hidden" name="value1" value= "${Randomadd.value1}">
 <input type="hidden" name="value2" value= "${Randomadd.value2}">
-<input type="hidden" name="userid" value= "${aXccount.id}">
+<input type="hidden" name="userid" value= "${account.id}">
  <div class="cp_iptxt">
  <label class="ef">
  <input type="text" name="answer"> 
