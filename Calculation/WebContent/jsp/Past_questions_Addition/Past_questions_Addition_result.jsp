@@ -12,7 +12,10 @@
 <div class="mistake">
 <P>正解</P>
 <br>
-	<form method="get" action="./Random_addition">
+	<form method="get" action="./Past_questions_Addition_Servlet">
+	<input type="hidden" name="userid" value= "${account.id}">
+    <input type="hidden" name="countadd" value= "${count.count_addition}">
+    <input type="hidden" name="countaddall" value= "${count.count_additionall}">
 	<input type="submit" name="nextButton" value="次の問題">
     </form>
  <form method="Post" action="./count_Sarvlet">

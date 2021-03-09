@@ -56,6 +56,13 @@
     <br>
     <p>---------------------------------</p>
     <h1>過去問算数</h1>
+    <form method="get" action="./Past_questions_Addition_Servlet">
+    <input type="hidden" name="userid" value= "${account.id}">
+    <input type="hidden" name="countadd" value= "${count.count_addition}">
+    <input type="hidden" name="countaddall" value= "${count.count_additionall}">
+ 	<input class="btn btn--orange"type="submit" name="nextButton" value="過去問足し算">
+ 	</form>
+ 	<br>
 </div>
 </aside>
 <footer>

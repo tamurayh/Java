@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="area">
-  <h2>自主学習をしよう♪</h2>   
+  <h2>算数のランダム問題♪</h2>   
   <p>小学校で習う勉強が練習できる</p>
 
  <a href="register.jsp" class="btn btn-malformation btn-malformation--pastel"><span>新規登録</span></a>
@@ -19,8 +19,8 @@
  <div class="cd-fixed-bg cd-bg-1"></div>
  
  <div class="area2">
-  <p>【CSS】でスクロール時に背景画像が切り替わるパララックス</p>
-  <h2>background02</h2>   
+  <p>最初の型は新規登録からユーザー登録してね</p>
+  <h2>ログイン後はユーザーページから問題に挑戦できるよ</h2>   
 </div>
     
 <div class="cd-fixed-bg cd-bg-2"></div>

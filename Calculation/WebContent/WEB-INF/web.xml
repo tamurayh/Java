@@ -116,9 +116,27 @@
   </servlet>
     <servlet>
     <description></description>
+    <display-name>Past_questions_Addition</display-name>
+    <servlet-name>Past_questions_Addition</servlet-name>
+    <jsp-file>/jsp/Past_questions_Addition/Past_questions_Addition.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
     <display-name>HOME</display-name>
     <servlet-name>HOME</servlet-name>
     <jsp-file>/jsp/login/HOME.jsp</jsp-file>
+  </servlet>
+    <servlet>
+    <description></description>
+    <display-name>Past_questions_Addition_result</display-name>
+    <servlet-name>Past_questions_Addition_result</servlet-name>
+    <jsp-file>/jsp/Past_questions_Addition/Past_questions_Addition_result.jsp</jsp-file>
+  </servlet>
+      <servlet>
+    <description></description>
+    <display-name>Past_questions_Addition_resultmistake</display-name>
+    <servlet-name>Past_questions_Addition_resultmistake</servlet-name>
+    <jsp-file>/jsp/Past_questions_Addition/Past_questions_Addition_resultmistake.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
@@ -197,6 +215,18 @@
     <url-pattern>/mistake_division.jsp</url-pattern>
   </servlet-mapping> 
     <servlet-mapping>
+    <servlet-name>Past_questions_Addition</servlet-name>
+    <url-pattern>/Past_questions_Addition.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>Past_questions_Addition_result</servlet-name>
+    <url-pattern>/Past_questions_Addition_result.jsp</url-pattern>
+  </servlet-mapping> 
+    <servlet-mapping>
+    <servlet-name>Past_questions_Addition_resultmistake</servlet-name>
+    <url-pattern>/Past_questions_Addition_resultmistake.jsp</url-pattern>
+  </servlet-mapping> 
+      <servlet-mapping>
     <servlet-name>HOME</servlet-name>
     <url-pattern>/HOME.jsp</url-pattern>
   </servlet-mapping> 

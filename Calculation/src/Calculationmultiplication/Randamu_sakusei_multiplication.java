@@ -72,14 +72,17 @@ public class Randamu_sakusei_multiplication {
 	    public void setAcceptance(int Acceptance) {
 	        this.Acceptance = Acceptance;
 	    }
+	    
+	    public int getid() {
+	    	  
+		      return id;
+		}
+	    
 		public void setid(int id) {
 
 	    	this.id = id;	
 	    }
 		
-	    public int getid() {
-	    	  
-	      return id;
-	   }
+
 
 }
