@@ -8,8 +8,11 @@
 - mysql8.0
 - eqlipse
 
-# E=R図
+# データベース
 ![E-R図](https://user-images.githubusercontent.com/64111143/140650780-ed7d81b8-067c-48b5-bcc3-5384afa34055.png)
+
+![関係スキーマ](https://user-images.githubusercontent.com/64111143/140650876-45d5d1bd-f1ad-4b5d-914f-8a44245b2a3c.png)
+
 
 # 機能一覧
 - ユーザー新規登録
