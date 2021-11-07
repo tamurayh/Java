@@ -8,7 +8,8 @@
 - mysql8.0
 - eqlipse
 
-# 機能一覧
+# 機能一覧![E-R図](https://user-images.githubusercontent.com/64111143/140650780-ed7d81b8-067c-48b5-bcc3-5384afa34055.png)
+
 - ユーザー新規登録
 - パスワードのハッシュ化
 - 四則演算のランダム化
